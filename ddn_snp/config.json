@@ -10,7 +10,7 @@
   "text": {
     "more": "Phenotype connectivity map for Genie cohort",
     "intro": "Human-Disease Phenotype Map\n",
-    "title": "Genie"
+    "title": "Genie Cohort - Human-Disease Phenotype Map"
   },
   "legend": {
     "edgeLabel": "SNPS",
@@ -23,17 +23,22 @@
     "hoverBehavior": "dim"
   },
   "informationPanel": {
-    "groupByEdgeDirection": true,
-    "imageAttribute": "Label"
+    "groupByEdgeDirection": false,
+    "imageAttribute": false
   },
   "sigma": {
     "drawingProperties": {
-      "defaultEdgeType": "curve",
+      "defaultEdgeType": "undirected",
+      "edgeColor": "#000",
+      "defaultEdgeColor": "#000fff",
+      "edgeHoverColor": "#000",
+      "edgeHoverExtremities": true,
       "defaultHoverLabelBGColor": "#002147",
       "defaultLabelBGColor": "#ddd",
       "activeFontStyle": "bold",
       "defaultLabelColor": "#000",
-      "labelThreshold": 10,
+      "labelHoverColor":"node",
+      "labelThreshold": 7,
       "defaultLabelHoverColor": "#fff",
       "fontStyle": "bold",
       "hoverFontStyle": "bold",
@@ -41,9 +46,9 @@
     },
     "graphProperties": {
       "maxEdgeSize": 0.5,
-      "minEdgeSize": 0.2,
-      "minNodeSize": 1,
-      "maxNodeSize": 7
+      "minEdgeSize": 0.1,
+      "minNodeSize": 0.4,
+      "maxNodeSize": 9
     },
     "mouseProperties": {
       "maxRatio": 20,
